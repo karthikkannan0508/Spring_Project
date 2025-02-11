@@ -1,4 +1,4 @@
-package com.Agriculture.Agro.dao;
+package com.Agriculture.Agro.DAO;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,11 +6,11 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.Agriculture.Agro.dto.Farmer;
-import com.Agriculture.Agro.repo.FarmerRepo;
+import com.Agriculture.Agro.DTO.Farmer;
+import com.Agriculture.Agro.Repo.FarmerRepo;
 
 @Repository
-public class FarmerDao {
+public class FarmerDAO {
 	
 	@Autowired
 	private FarmerRepo repo;

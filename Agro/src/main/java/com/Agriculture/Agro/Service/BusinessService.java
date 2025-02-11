@@ -5,26 +5,26 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.Agriculture.Agro.dao.BussinessDao;
-import com.Agriculture.Agro.dto.Bussiness;
+import com.Agriculture.Agro.DAO.BusinessDAO;
+import com.Agriculture.Agro.DTO.Business;
 
 @Service
-public class BussinessService {
+public class BusinessService {
 	
 	@Autowired
-	private BussinessDao dao;
+	private BusinessDAO dao;
 	
 	
-	public Bussiness fetchById(int bid) {
+	public Business fetchById(int bid) {
 		return dao.fetchById(bid);
 	}
 	
-	public List<Bussiness> fetchAll(){
+	public List<Business> fetchAll(){
 		return dao.fetchAll();
 	}
 	
-	public Bussiness updateAddress(int bid,Bussiness newBussiness) {
-		Bussiness b = fetchById(bid);
+	public Business updateAddress(int bid,Business newBussiness) {
+		Business b = fetchById(bid);
 		
 		if(b!=null) {
 			newBussiness.setBid(bid);
@@ -34,8 +34,8 @@ public class BussinessService {
 		return null;
 	}
 	
-	public Bussiness updateCity(int bid,long bPhone) {
-		Bussiness b = fetchById(bid);
+	public Business updateCity(int bid,long bPhone) {
+		Business b = fetchById(bid);
 		
 		if(b!=null) {
 			b.setbPhone(bPhone);

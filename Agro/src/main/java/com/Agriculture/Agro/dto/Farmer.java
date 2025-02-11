@@ -1,4 +1,4 @@
-package com.Agriculture.Agro.dto;
+package com.Agriculture.Agro.DTO;
 
 public class Farmer {
 	private int fid;

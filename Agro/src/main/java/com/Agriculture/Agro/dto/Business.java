@@ -1,6 +1,6 @@
-package com.Agriculture.Agro.dto;
+package com.Agriculture.Agro.DTO;
 
-public class Bussiness {
+public class Business {
 	
 	private int bid;
 	private String firstName;
